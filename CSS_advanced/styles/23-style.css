@@ -225,7 +225,8 @@ ul.row {
     display: block;
 }
 
-.social-link svg {
+/* FIX FOR TASK 23: Added > selector */
+.social-link > svg {
     fill: var(--text-color);
 }
 
