@@ -1,0 +1,114 @@
+:root {
+    /* Custom properties for colors */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    
+    /* Text color variable referencing black color */
+    --text-color: var(--color-black);
+
+    /* Custom properties for fonts */
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* Custom properties for font sizes */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Custom properties for font weights */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Custom properties for line height */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /* Custom properties for section header alignment */
+    --section-header-align: center;
+
+    /* Custom properties for text transform */
+    --section-tagline-transform: uppercase;
+
+    /* Custom properties for section title */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    /* Set foreground color, font family, font size, font weight and line height */
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+/* Headings from h1 to h6 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+a:link {
+    /* Set anchor color and remove decoration for unvisited links */
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:visited {
+    /* Set font style for visited links */
+    font-style: italic;
+}
+
+a:hover {
+    /* Set text decoration for hover state */
+    text-decoration: underline;
+}
+
+a:active {
+    /* Set background color for active state */
+    background-color: var(--color-light-grey);
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    /* Set color using the primary color variable */
+    color: var(--color-primary);
+}
+
+.section-header {
+    /* Set horizontal alignment */
+    text-align: var(--section-header-align);
+}
+
+.section-title {
+    /* Set font family, size, weight, margin and color */
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+.section-tagline {
+    /* Set color using the primary color variable */
+    color: var(--color-primary);
+    /* Set font family, text transform and font weight */
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
